@@ -1,6 +1,7 @@
 /*
     Job of Rectangle:
-
+        - To perform all operations related to length and breadth
+                e.g. calculate area and perimeter
  */
 public class Rectangle {
     private final double length;
