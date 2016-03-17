@@ -20,7 +20,7 @@ public class Rectangle {
         return 2 * (length + breadth);
     }
 
-    public static Rectangle create(int length, int breadth) throws InvalidDimensionException {
+    public static Rectangle create(double length, double breadth) throws InvalidDimensionException {
         if (length < 0 || breadth < 0)
             throw new InvalidDimensionException();
         return new Rectangle(length, breadth);
