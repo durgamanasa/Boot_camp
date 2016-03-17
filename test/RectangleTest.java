@@ -1,22 +1,46 @@
-import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import static junit.framework.TestCase.assertEquals;
 
 public class RectangleTest {
+
+    @Rule
+    public ExpectedException thrown = ExpectedException.none();
+
     @Test
-    public void calculateArea_should_return_the_area_of_the_rectangle() throws Exception {
-        Rectangle rectangle = new Rectangle(4, 5);
+    public void should_calculate_the_area_when_length_and_breadth_are_positive() throws InvalidDimensionException {
+        Rectangle rectangle = Rectangle.create(4, 5);
         double area = rectangle.calculateArea();
-        assertEquals(20,area,0);
+        assertEquals(20, area, 0);
     }
 
     @Test
-    public void calculatePerimeter_should_return_the_perimeter_of_the_rectangle() throws Exception {
-        Rectangle rectangle = new Rectangle(2,6);
+    public void should_calculate_the_area_when_length_or_breadth_is_zero() throws InvalidDimensionException {
+        Rectangle rectangle = Rectangle.create(10, 0);
+        double area = rectangle.calculateArea();
+        assertEquals(0, area, 0);
+    }
+
+    @Test
+    public void should_calculate_the_perimeter_when_length_and_breadth_are_positive() throws InvalidDimensionException {
+        Rectangle rectangle = Rectangle.create(2, 6);
         double perimeter = rectangle.calculatePerimeter();
         assertEquals(16, perimeter, 0);
-
     }
 
+    @Test
+    public void should_throw_InvalidDimensionException_when_length_is_non_positive() throws InvalidDimensionException {
+        thrown.expect(InvalidDimensionException.class);
+        thrown.expectMessage("Invalid Dimension");
+        Rectangle rectangle = Rectangle.create(-10,4);
+    }
+
+    @Test
+    public void should_throw_InvalidDimensionException_when_breadth_is_non_positive() throws InvalidDimensionException {
+        thrown.expect(InvalidDimensionException.class);
+        thrown.expectMessage("Invalid Dimension");
+        Rectangle rectangle = Rectangle.create(10,-4);
+    }
 }

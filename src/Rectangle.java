@@ -1,13 +1,13 @@
 /*
     Job of Rectangle:
-        - To perform all operations related to length and breadth
-                e.g. calculate area and perimeter
+        - To calculate area
+        - To calculate perimeter
  */
 public class Rectangle {
     private final double length;
     private final double breadth;
 
-    public Rectangle(double length, double breadth) {
+    private Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
     }
@@ -18,5 +18,11 @@ public class Rectangle {
 
     public double calculatePerimeter() {
         return 2 * (length + breadth);
+    }
+
+    public static Rectangle create(int length, int breadth) throws InvalidDimensionException {
+        if (length < 0 || breadth < 0)
+            throw new InvalidDimensionException();
+        return new Rectangle(length, breadth);
     }
 }
