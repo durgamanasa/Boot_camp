@@ -34,14 +34,14 @@ public class RectangleTest {
     @Test
     public void should_throw_InvalidDimensionException_when_length_is_non_positive() throws InvalidDimensionException {
         thrown.expect(InvalidDimensionException.class);
-        thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive length and breadth"));
+        thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive dimension"));
         Rectangle rectangle = Rectangle.create(-10,4);
     }
 
     @Test
     public void should_throw_InvalidDimensionException_when_breadth_is_non_positive() throws InvalidDimensionException {
         thrown.expect(InvalidDimensionException.class);
-        thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive length and breadth"));
+        thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive dimension"));
         Rectangle rectangle = Rectangle.create(10,-4);
     }
 

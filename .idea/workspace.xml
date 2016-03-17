@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="959de0bf-0954-45ed-ac66-9b51b9c920cc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Square.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/SquareTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Boot_camp/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/Boot_camp/Rectangle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/Boot_camp/RectangleTest.class" afterPath="$PROJECT_DIR$/out/test/Boot_camp/RectangleTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/InvalidDimensionException.java" afterPath="$PROJECT_DIR$/src/InvalidDimensionException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Rectangle.java" afterPath="$PROJECT_DIR$/src/Rectangle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RectangleTest.java" afterPath="$PROJECT_DIR$/test/RectangleTest.java" />
     </list>
     <ignored path="Boot_camp.iws" />
@@ -27,39 +30,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RectangleTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7281553">
-              <caret line="36" column="102" selection-start-line="36" selection-start-column="102" selection-end-line="36" selection-end-column="102" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
+      <file leaf-file-name="InvalidDimensionException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/InvalidDimensionException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="60" />
               <folding>
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#467#468#0" expanded="true" />
+                <element signature="e#99#100#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvalidDimensionException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/InvalidDimensionException.java">
+      <file leaf-file-name="RectangleTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="69" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="69" />
+              <caret line="36" column="91" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SquareTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/SquareTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.14180478">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
-                <element signature="e#99#100#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +70,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -86,6 +88,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/Square.java" />
+        <option value="$PROJECT_DIR$/test/SquareTest.java" />
+        <option value="$PROJECT_DIR$/test/ShapeTest.java" />
+        <option value="$PROJECT_DIR$/test/ShapesTest.java" />
+        <option value="$PROJECT_DIR$/src/Shapes.java" />
         <option value="$PROJECT_DIR$/src/InvalidDimensionException.java" />
         <option value="$PROJECT_DIR$/test/RectangleTest.java" />
       </list>
@@ -190,13 +197,20 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest">
+  <component name="RunManager" selected="JUnit.SquareTest">
     <configuration default="false" name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Boot_camp" />
@@ -269,6 +283,27 @@
       <option name="MAIN_CLASS_NAME" value="RectangleTest" />
       <option name="METHOD_NAME" value="should_calculate_the_area_when_length_or_breadth_is_zero" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Boot_camp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SquareTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -582,18 +617,20 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.RectangleTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_perimeter_when_length_and_breadth_are_positive" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_and_breadth_are_positive" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_or_breadth_is_zero" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.SquareTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RectangleTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_or_breadth_is_zero" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_and_breadth_are_positive" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_perimeter_when_length_and_breadth_are_positive" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SquareTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RectangleTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_or_breadth_is_zero" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_area_when_length_and_breadth_are_positive" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RectangleTest.should_calculate_the_perimeter_when_length_and_breadth_are_positive" />
       </list>
     </recent_temporary>
   </component>
@@ -616,39 +653,45 @@
       <option name="project" value="LOCAL" />
       <updated>1458193052849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Test method's exception handling is modifed.">
+      <created>1458194928692</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1458194928692</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 34m 14s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 34m 28s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 35m 03s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 35m 08s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 35m 16s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 35m 35s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 35m 54s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 36m 17s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RectangleTest - 2016.03.17 at 11h 36m 39s.xml">
-      <configuration name="RectangleTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RectangleTest - 2016.03.17 at 11h 36m 52s.xml">
       <configuration name="RectangleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RectangleTest - 2016.03.17 at 11h 49m 29s.xml">
+      <configuration name="RectangleTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 49m 35s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 50m 51s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 52m 51s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 53m 52s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 54m 35s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 11h 55m 14s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 12h 01m 29s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SquareTest - 2016.03.17 at 13h 07m 43s.xml">
+      <configuration name="SquareTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -662,10 +705,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -690,7 +733,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298122" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -708,7 +751,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the responsibility of creating a new rectangle.&#10;InvalidDimensionException is implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the responsibility of creating a new rectangle.&#10;InvalidDimensionException is implemented." />
+    <MESSAGE value="Test method's exception handling is modifed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Test method's exception handling is modifed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -721,7 +765,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.5339806">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding>
             <element signature="e#341#342#0" expanded="true" />
@@ -732,22 +776,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+          <folding>
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/InvalidDimensionException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="69" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="69" />
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="60" />
           <folding>
             <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/RectangleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7281553">
-          <caret line="36" column="102" selection-start-line="36" selection-start-column="102" selection-end-line="36" selection-end-column="102" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="91" selection-start-line="36" selection-start-column="91" selection-end-line="36" selection-end-column="91" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/SquareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14180478">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
