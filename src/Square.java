@@ -1,3 +1,6 @@
+/*
+To provide what user wants
+ */
 public class Square extends Rectangle {
 
     private Square(double side) {

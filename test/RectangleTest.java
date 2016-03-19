@@ -6,7 +6,6 @@ import org.junit.rules.ExpectedException;
 import static junit.framework.TestCase.assertEquals;
 
 public class RectangleTest {
-
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
@@ -35,20 +34,20 @@ public class RectangleTest {
     public void should_throw_InvalidDimensionException_when_length_is_non_positive() throws InvalidDimensionException {
         thrown.expect(InvalidDimensionException.class);
         thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive dimension"));
-        Rectangle rectangle = Rectangle.create(-10,4);
+        Rectangle rectangle = Rectangle.create(-10, 4);
     }
 
     @Test
     public void should_throw_InvalidDimensionException_when_breadth_is_non_positive() throws InvalidDimensionException {
         thrown.expect(InvalidDimensionException.class);
         thrown.expectMessage(CoreMatchers.is("Invalid Dimension, provide positive dimension"));
-        Rectangle rectangle = Rectangle.create(10,-4);
+        Rectangle rectangle = Rectangle.create(10, -4);
     }
 
     @Test
     public void should_throw_InvalidDimensionException_when_length_and_breadth_both_are_non_positive() throws InvalidDimensionException {
         thrown.expect(InvalidDimensionException.class);
         thrown.expectMessage(CoreMatchers.startsWith("Invalid Dimension"));
-        Rectangle rectangle = Rectangle.create(-6,-4);
+        Rectangle rectangle = Rectangle.create(-6, -4);
     }
 }

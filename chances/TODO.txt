@@ -1,0 +1,6 @@
+Boot camp problems
+
+find the chances of getting tails when the coin is flipping
+
+create a class called Chance whose job is that to tell the chances of getting tails
+
