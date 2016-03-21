@@ -15,6 +15,11 @@ public class Measurement {
         return new Measurement(quantity * unit.convertToBaseUnit(), unit.getStandardUnit());
     }
 
+    public boolean isInStandardUnit() {
+        return unit == unit.getStandardUnit();
+    }
+
+
     private Class<? extends MeasurementUnits> getType() {
         return unit.getClass();
     }

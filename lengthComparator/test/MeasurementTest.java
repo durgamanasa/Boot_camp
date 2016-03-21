@@ -52,11 +52,13 @@ public class MeasurementTest {
     }
 
     @Test
-    public void measurement_can_add_two_different_lengths() throws InvalidMeasurementEqualityException, AdditionOfDifferentMeasurementUnitsException {
+    public void measurement_should_return_sum_in_standard_unit() throws InvalidMeasurementEqualityException, AdditionOfDifferentMeasurementUnitsException {
         Measurement measurementInInch = new Measurement(2, LengthUnits.Inch);
         Measurement measurementInCentimeter = new Measurement(2.5, LengthUnits.Centimeter);
-        Measurement expected = new Measurement(3, LengthUnits.Inch);
-        assertTrue(expected.isEqualTo(measurementInInch.add(measurementInCentimeter)));
+        Measurement sum = measurementInInch.add(measurementInCentimeter);
+        Measurement expected = new Measurement(7.5, LengthUnits.Centimeter);
+        assertTrue(expected.isEqualTo(sum));
+        assertTrue(sum.isInStandardUnit());
     }
 
     @Test
