@@ -1,3 +1,7 @@
+/*
+Job:    Checks two measurements are equal or not
+        Adds two measurements
+ */
 public class Measurement {
     private double quantity;
     private MeasurementUnits unit;
@@ -11,13 +15,25 @@ public class Measurement {
         return new Measurement(quantity * unit.convertToBaseUnit(), unit.getStandardUnit());
     }
 
-    public boolean isEqualTo(Measurement otherMeasurement) {
+    private Class<? extends MeasurementUnits> getType() {
+        return unit.getClass();
+    }
+
+    private boolean isSameTypeOfMeasurement(Measurement otherMeasurement){
+        return this.getType() == otherMeasurement.getType();
+    }
+
+    public boolean isEqualTo(Measurement otherMeasurement) throws InvalidMeasurementEqualityException {
+        if (!isSameTypeOfMeasurement(otherMeasurement))
+            throw new InvalidMeasurementEqualityException();
         Measurement thisAsStandardMeasurement = this.convertToBase();
         Measurement otherAsStandardMeasurement = otherMeasurement.convertToBase();
         return thisAsStandardMeasurement.quantity == otherAsStandardMeasurement.quantity;
     }
 
-    public Measurement add(Measurement otherMeasurement) {
+    public Measurement add(Measurement otherMeasurement) throws AdditionOfDifferentMeasurementUnitsException {
+        if (!isSameTypeOfMeasurement(otherMeasurement))
+            throw new AdditionOfDifferentMeasurementUnitsException();
         Measurement thisAsStandardMeasurement = this.convertToBase();
         Measurement otherAsStandardMeasurement = otherMeasurement.convertToBase();
         double sum = thisAsStandardMeasurement.quantity + otherAsStandardMeasurement.quantity;
