@@ -1,16 +1,35 @@
 package wizard;
 
-public enum Ball {
-    GREEN(3);
+public class Ball {
 
-    private int maxCapacity;
 
-    Ball(int maxCapacity) {
+    private Colours colour;
 
-        this.maxCapacity = maxCapacity;
+    public Ball(Colours colour) {
+        this.colour = colour;
     }
 
-    public boolean isCapable(int currentCount) {
-        return currentCount < maxCapacity;
+    public Colours getColour(){
+        return colour;
+    }
+
+    public boolean isOfSameColour(Colours otherColour) {
+        return colour == otherColour;
     }
 }
+
+
+//public enum Ball {
+//    GREEN(3);
+//
+//    private int maxCapacity;
+//
+//    Ball(int maxCapacity) {
+//
+//        this.maxCapacity = maxCapacity;
+//    }
+//
+//    public boolean isCapable(int currentCount) {
+//        return currentCount < maxCapacity;
+//    }
+//}
