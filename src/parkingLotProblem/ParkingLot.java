@@ -5,11 +5,11 @@ package parkingLotProblem;
 
 import java.util.ArrayList;
 
-public class ParkingArea {
+public class ParkingLot {
     private final ArrayList<Car> parkedCars = new ArrayList<>();
     private int limitOfCars;
 
-    public ParkingArea(int limitOfCars) {
+    public ParkingLot(int limitOfCars) {
         this.limitOfCars = limitOfCars;
     }
 
