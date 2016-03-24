@@ -1,6 +1,6 @@
 package wizard;
 
-import wizard.exception.ColourIsFullException;
+import wizard.exception.ToManyGreenBallsException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,9 +14,9 @@ public class BunchOfBalls {
         this.balls = new ArrayList<>(maxCapacity);
     }
 
-    public void add(Ball ball) throws ColourIsFullException {
+    public void add(Ball ball) throws ToManyGreenBallsException {
         if (balls.size() >= maxCapacity)
-            throw new ColourIsFullException();
+            throw new ToManyGreenBallsException();
         balls.add(ball);
     }
 

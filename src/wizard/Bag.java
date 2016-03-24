@@ -1,13 +1,21 @@
+/*
+Job: Store the ball in the bags(only 12 balls)
+     Store only 3 green balls
+     Store the red colour balls double of the green colour balls
+     Store the as many blue balls as a bag can hold
 
+
+ */
 
 package wizard;
 
 import wizard.exception.BagIsFullException;
-import wizard.exception.ColourIsFullException;
+import wizard.exception.ToManyGreenBallsException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
 
 public class Bag {
 
@@ -21,13 +29,13 @@ public class Bag {
         capacityOfBalls.put(Colours.GREEN, 3);
         capacityOfBalls.put(Colours.RED, 0);
         capacityOfBalls.put(Colours.YELLOW, (int) (0.4 * maxCapacity));
-        capacityOfBalls.put(Colours.BLUE,maxCapacity);
+        capacityOfBalls.put(Colours.BLUE, maxCapacity);
     }
 
-    public void add(Ball ball) throws BagIsFullException, ColourIsFullException {
+    public void add(Ball ball) throws BagIsFullException, ToManyGreenBallsException {
         if (balls.size() >= maxCapacity) throw new BagIsFullException();
         int capacity = capacityOfBalls.get(ball.getColour());
-        if (capacity <= countOf(ball.getColour())) throw new ColourIsFullException();
+        if (capacity <= countOf(ball.getColour())) throw new ToManyGreenBallsException();
         balls.add(ball);
         updateCapacityOfBalls(ball.getColour());
     }
