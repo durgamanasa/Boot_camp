@@ -3,12 +3,14 @@ package bag;
 import ball.Ball;
 import ball.Balls;
 import exception.BagFullException;
+import exception.RedBallIsNotAllowedException;
+import exception.ToManyGreenBallsException;
 import rule.Rule;
 import rule.Rules;
 
 public class Bag {
     private final Balls balls;
-    private int noOfAllowedBalls;
+    private final int noOfAllowedBalls;
     private Rules rules;
 
     public Bag(int noOfAllowedBalls, Rules rules) {
@@ -17,10 +19,11 @@ public class Bag {
         this.balls = new Balls();
     }
 
-    public void add(Ball ball) {
+    public void add(Ball ball) throws ToManyGreenBallsException{
         for (Rule rule : rules) {
-//            rule.canBallBeAdded(ball, balls);
+            rule.canBallBeAdded(ball, balls);
         }
         balls.add(ball);
+        System.out.println(balls.size());
     }
 }

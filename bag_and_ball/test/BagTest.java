@@ -1,6 +1,7 @@
 import bag.Bag;
 import ball.Ball;
 import exception.BagFullException;
+import exception.RedBallIsNotAllowedException;
 import exception.ToManyGreenBallsException;
 import org.junit.Before;
 import org.junit.Rule;
@@ -29,9 +30,9 @@ public class BagTest {
     public ExpectedException thrown = ExpectedException.none();
 
     @Test
-    public void bag_should_store_only_12_balls_() throws BagFullException {
+    public void bag_should_store_only_12_balls_() throws BagFullException, ToManyGreenBallsException {
         for (int index = 0; index < 12; index++) {
-            bag.add(Ball.createGreenBall());
+            bag.add(Ball.createBlueBall());
         }
         thrown.expect(BagFullException.class);
         thrown.expectMessage("Bag is full you can not store more than 12 balls");
@@ -39,12 +40,12 @@ public class BagTest {
     }
 
     @Test
-    public void bag_should_store_only_3_green_balls() throws BagFullException {
+    public void bag_should_store_only_3_green_balls() throws BagFullException, ToManyGreenBallsException{
         bag.add(Ball.createGreenBall());
         bag.add(Ball.createGreenBall());
         bag.add(Ball.createGreenBall());
         thrown.expect(ToManyGreenBallsException.class);
-        thrown.expectMessage("You can't add more that three green balls");
+        thrown.expectMessage("You can't add more than three green balls");
         bag.add(Ball.createGreenBall());
     }
 }

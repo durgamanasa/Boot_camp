@@ -10,9 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/chances/lib" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/coins/bootCamp/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/coins/bootCamp/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bag/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/bag/test" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/bag/lib" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/bag_and_ball/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/bag_and_ball/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/bag_and_ball/lib" type="java-test-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
